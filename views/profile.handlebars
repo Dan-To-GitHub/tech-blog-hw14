@@ -23,8 +23,9 @@
     </form>
   </div>
 
-  {{#if posts.length}}
   <div class="col-md-6 post-list">
+    {{#if posts.length}}
+
     <h3>Current Blogs:</h3>
 
     {{#each posts as |post|}}
@@ -37,8 +38,8 @@
       </div>
     </div>
     {{/each}}
+    {{/if}}
   </div>
-  {{/if}}
 </div>
 
-<script src="../public/js/profile.js"></script>
+<script src="/js/profile.js"></script>
